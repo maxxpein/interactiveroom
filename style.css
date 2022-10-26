@@ -23,7 +23,7 @@ body {
     z-index: 10;
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
 }
-
+ 
 .clock::after {
     content: '';
     position: absolute;
@@ -39,19 +39,19 @@ body {
 
 .hour{
     width: 7px;
-    height: 45%; 
+    height: 25%; 
     background-color: black;
 }
 
 .minute{
     width: 7px;
-    height: 45%; 
+    height: 40%; 
     background-color: black;
 }
 
 .second{
     width: 4px;
-    height: 45%; 
+    height: 40%; 
     background-color: red;
 }
 
@@ -60,7 +60,9 @@ body {
     height: 100%;
     width: 100%;
     text-align: center;
-    transform: rotate(var (--rotation));
+    transform: rotate(var(--rotation));
+    padding-top: 3px;
+    font-weight: 600;
 }
 
 .number1{
